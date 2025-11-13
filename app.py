@@ -3,15 +3,14 @@ try:
     import streamlit
 except ImportError:
     print("Streamlit not found. Installing now...")
-    !pip install streamlit
+   
 
 # Install earthengine-api if not already installed
 try:
     import ee
 except ImportError:
     print("Earth Engine API not found. Installing now...")
-    !pip install earthengine-api
-
+  
 import ee
 
 import geemap.foliumap as geemap
